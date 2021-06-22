@@ -58,17 +58,31 @@ main button{
     border: transparent;
     font-weight: 400;
     font-size: 1rem;
+
+    cursor: pointer;
 }
 
 #add_task{
     background-color: rgb(24, 170, 255);
     color: white;
+    transition: 200ms ease-in-out;
+    border: 1px transparent solid;
 }
 
 #add_section{
     background-color: transparent;
     border: 1px grey solid;
     color: grey;
+    transition: 200ms ease-in-out;
+}
+
+/* hover buttons style */
+#add_task:hover,
+#add_section:hover{
+    background-color: #6ed663;
+    color: white;
+    border: 1px transparent solid;
+    transition: 200ms ease-in-out;
 }
 
 /* ---------- "tasks_container" section --------- */
@@ -86,6 +100,7 @@ main section{
 
 main section .section_title{
     color: #021732;
+    cursor: pointer;
 }
 
 main section .section_title span{
@@ -107,6 +122,8 @@ li{
 .checked::before{
     content: '\2713';
     display: inline-block;
+    cursor: pointer;
+
     width: 17px; height: 17px;
     border-radius: 50%;
     border: 2px rgb(0, 156, 8) solid;
@@ -123,6 +140,8 @@ li{
 .unchecked::before{
     content: '\00D7';
     display: inline-block;
+    cursor: pointer;
+
     width: 17px; height: 17px;
     border-radius: 50%;
     border: 2px red solid;
