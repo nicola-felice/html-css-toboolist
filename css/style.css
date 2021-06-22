@@ -33,3 +33,72 @@ img{
     vertical-align: middle;
     width: 60px;
 }
+
+
+/* ------------------
+   main style
+   ------------------ */
+
+main{
+    width: 75%;
+    margin: 3rem auto;
+}
+
+/* ---------- "buttons_container" section --------- */
+main .buttons_container{
+    margin-bottom: 2px;
+    background-color: white;
+    padding: .75rem 3rem;
+
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+main button{
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: transparent;
+}
+
+#add_task{
+    background-color: rgb(24, 170, 255);
+    color: white;
+}
+
+#add_section{
+    background-color: transparent;
+    border: 1px grey solid;
+    color: grey;
+}
+
+/* ---------- "tasks_container" section --------- */
+main .tasks_container{
+    background-color: white;
+    padding: 1.5rem 3rem;
+
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+main section{
+    padding-bottom: 2rem;
+}
+
+main section .section_title{
+    color: #021732;
+}
+
+main section .section_title span{
+    font-size: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: .5rem 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: rgb(56, 56, 56);
+}
