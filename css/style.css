@@ -9,8 +9,6 @@ body{
     background-color: whitesmoke;
 }
 
-/* &check; &cross; */
-
 
 /* ------------------
    header style
@@ -97,8 +95,41 @@ ul{
 }
 
 li{
-    margin: .5rem 0;
+    margin: .75rem 0;
     font-weight: 500;
     font-size: 1.25rem;
     color: rgb(56, 56, 56);
+}
+
+/* checked/unchecked tasks style */
+.checked::before{
+    content: '\2713';
+    display: inline-block;
+    width: 17px; height: 17px;
+    border-radius: 50%;
+    border: 2px rgb(0, 156, 8) solid;
+
+    font-size: .75rem;
+    font-weight: 900;
+    line-height: 17px;
+    text-align: center;
+    color: rgb(0, 156, 8);
+
+    margin-right: 10px;
+}
+
+.unchecked::before{
+    content: '\00D7';
+    display: inline-block;
+    width: 17px; height: 17px;
+    border-radius: 50%;
+    border: 2px red solid;
+
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 17px;
+    text-align: center;
+    color: red;
+
+    margin-right: 10px;
 }
