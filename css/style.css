@@ -56,6 +56,8 @@ main button{
     padding: .5rem 1rem;
     border-radius: 5px;
     border: transparent;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 #add_task{
@@ -132,4 +134,54 @@ li{
     color: red;
 
     margin-right: 10px;
+}
+
+/* category of the task common style  */
+li::after{
+    content: '';
+    background-color: transparent;
+    height: 30px;
+    color: white;
+    font-size: .75rem;
+    letter-spacing: 1px;
+
+    border: transparent;
+    border-radius: 20px;
+    
+    padding: 0 1rem;
+    line-height: 28px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* category specific styles */
+.category_editorial::after{
+    background-color: rgba(28, 134, 255, 0.65);
+    content: 'Editorial';
+}
+
+.category_sales::after{
+    background-color: rgba(153, 205, 50, 0.65);
+    content: 'Sales';
+}
+
+.category_website::after{
+    background-color: rgba(153, 50, 204, 0.65);
+    content: 'Website';
+}
+
+.category_mobile::after{
+    background-color: rgba(255, 166, 0, 0.65);
+    content: 'Mobile';
+}
+
+.category_recruiting::after{
+    background-color: rgba(50, 205, 50, 0.65);
+    content: 'Recruiting';
+}
+
+.category_q1_goals::after{
+    background-color: rgba(128, 0, 128, 0.65);
+    content: 'Q1 Goals';
 }
