@@ -55,7 +55,6 @@ main .buttons_container{
 main button{
     padding: .5rem 1rem;
     border-radius: 5px;
-    border: transparent;
     font-weight: 400;
     font-size: 1rem;
 
@@ -66,7 +65,7 @@ main button{
     background-color: rgb(24, 170, 255);
     color: white;
     transition: 200ms ease-in-out;
-    border: 1px transparent solid;
+    border: 1px rgb(24, 170, 255) solid;
 }
 
 #add_section{
