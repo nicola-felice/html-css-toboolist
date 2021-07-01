@@ -78,8 +78,8 @@ main button{
 /* hover buttons style */
 #add_task:hover,
 #add_section:hover{
-    background-color: #6ed663;
-    color: white;
+    background-color: rgb(0, 255, 234);
+    color: rgb(68, 68, 68);
     border: 1px transparent solid;
     transition: 200ms ease-in-out;
 }
